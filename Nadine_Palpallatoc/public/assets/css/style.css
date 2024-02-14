@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 100vh;   
+    background-image: url('/assets/image/earth bg.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+/* Header ------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nasa-logo {
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.nasa-logo2 {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Section 1 ---------------------------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: Verdana;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    font-family:Verdana;
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    font-family:Verdana;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Section 2 --------------------------------- */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#apodImage {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#apodExplanation {
+    margin: 20px 0 20px 0;
+    font-family: Verdana;
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    max-width: 55%;
+}

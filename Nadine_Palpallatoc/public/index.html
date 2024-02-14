@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS RESET  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <!-- Title -->
+    <title>Rest API - NASA APOD</title>
+</head>
+
+<body>
+    <!-- NASA Logo only -->
+    <header>
+        <img class="nasa-logo" src="/assets/image/nasa-logo.png" alt="NASA Logo"/>
+    </header>
+    <!-- H1, date box and button -->
+    <section class="main">
+        <img class="nasa-logo2" src="/assets/image/Nasa%20white.png" alt="NASA Logo White"/>
+        <h1>Picture of the Day</h1>
+        <label for="dateInput">Select date from 1994 to present:</label>
+        <input type="date" id="dateInput">
+        <button onclick="fetchAPOD()">Get Photo</button>
+    </section>
+
+    <!-- POTD and Photo description -->
+    <section id="apodContainer">
+        <article>
+            <!-- POTD and description will be displayed here -->
+            <p id="apodExplanation"></p>
+            <img id="apodImage" src="/assets/image/nasa apod.webp" alt="Astronomy Picture of the Day">
+        </article>
+    </section>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
