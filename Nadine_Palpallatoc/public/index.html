@@ -16,13 +16,14 @@
     <header>
         <img class="nasa-logo" src="/assets/image/nasa-logo.png" alt="NASA Logo"/>
     </header>
+    
     <!-- H1, date box and button -->
     <section class="main">
         <img class="nasa-logo2" src="/assets/image/Nasa%20white.png" alt="NASA Logo White"/>
         <h1>Picture of the Day</h1>
-        <label for="dateInput">Select date from 1994 to present:</label>
-        <input type="date" id="dateInput">
-        <button onclick="fetchAPOD()">Get Photo</button>
+        <label for="dateInput">Select dates from 1994 to the present only:</label>
+        <input type="date" id="dateInput" min="1994-01-01" max="2024-12-31">
+        <button id="getPhotoButton">Get Photo</button>
     </section>
 
     <!-- POTD and Photo description -->
